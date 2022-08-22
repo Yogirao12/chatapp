@@ -10,10 +10,10 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="*" component={Login} exact />
-        <Route path="/react-chatapp/register" component={Register} exact />
+        <Route path="/login" component={Login} exact />
+        <Route path="/register" component={Register} exact />
         <Route
-          path="/react-chatapp/"
+          path="/"
           component={(props) => (
             <AuthController {...props}>
               <Route path="/" component={Home} exact />
