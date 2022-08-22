@@ -12,6 +12,7 @@ export const axiosHandler = ({
   data = {},
   extra = null,
 }) => {
+  console.log("axios request coming!");
   let methodType = method.toUpperCase();
   if (
     ["GET", "POST", "PATCH", "PUT", "DELETE"].includes(methodType) ||
